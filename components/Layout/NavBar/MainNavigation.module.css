@@ -1,0 +1,22 @@
+/* Default sideBarButton is not shown */
+.sideBarButton {
+  display: none;
+}
+.mobileNavigation {
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.mainNavigation {
+  display: flex;
+  justify-content: space-between;
+}
+/* Make the navigation bar vertical for mobile viewing */
+@media only screen and (max-width: 595px) {
+  .mainNavigation {
+    display: none;
+  }
+  .sideBarButton {
+    display: inherit;
+  }
+}

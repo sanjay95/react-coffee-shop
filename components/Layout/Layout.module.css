@@ -1,0 +1,12 @@
+/* All pages will be below the Header. */
+.main {
+  padding-top: var(--nav-header-height);
+}
+
+@media only screen and (max-width: 595px) {
+  /* All pages will be above the Header. */
+  .main {
+    padding-top: 0;
+    padding-bottom: var(--nav-header-height);
+  }
+}

@@ -1,0 +1,63 @@
+.card {
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  background-color: white;
+}
+.container, .orderContainer, .slim, .displayContainer {
+  position: relative;
+  z-index: 1;
+}
+.container, .orderContainer, .slim {
+  background-color:transparent;
+}
+.container {
+  padding: 0.5rem 1rem;
+  width: 60%;
+  margin: 0 20%;
+}
+.orderContainer {
+  width: 50%;
+  margin: 2rem 25%;
+}
+.slim {
+  padding: 5% 1rem;
+  margin-top: 5rem;
+}
+.displayContainer {
+  text-align: center;
+  background-color: white;
+  padding: 0.5rem 0;
+  width: 50%;
+  margin: 0rem 25%;
+  border-radius: 20px;
+  box-shadow:  -1px 6px 6px rgba(1, 0, 0, 0.3), 1px -1px 2px rgba(0, 0, 0, 0.2);
+  color: var(--primary-color);
+}
+
+/* Mobile changes */
+@media only screen and (max-width: 595px) {
+  .container {
+    width: 98%;
+    margin-top: var(--mobile-margin-top);
+    margin-bottom: 0;
+    margin-right: 1%;
+    margin-left: 1%;
+    opacity: 95%;
+  }
+  .slim {
+    width: 98%;
+    margin-top: var(--mobile-margin-top) 1%;
+  }
+  .displayContainer {
+    width: 90%;
+    margin: 0rem 5%;
+    opacity: 95%;
+  }
+
+  .orderContainer {
+    width: 95%;
+    margin: 2rem 2.5%;
+    opacity: 95%;
+  }
+}

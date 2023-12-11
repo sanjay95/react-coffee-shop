@@ -1,0 +1,30 @@
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0.5rem auto auto;
+  padding: 5px;
+  position: relative;
+  background-color: white;
+  color: var(--name-color);
+  border-radius: 20px;
+  box-shadow: 5px 10px 5px 5px rgba(0, 0, 0, 0.55);
+  opacity: 80%;
+  z-index: 1;
+}
+
+.summary h2 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 595px) {
+  .summary h2{
+    font-size: 1.5rem;
+  }
+  .summary {
+    margin-top: 0;
+  }
+}
