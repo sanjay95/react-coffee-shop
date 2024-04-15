@@ -1,5 +1,27 @@
 # React Coffee Shop Website
 
+
+### Setup MongoDB 
+- docker or Atlas 
+  - Docker 
+  ``` sh 
+  docker run --name mongodb -d -p 27017:27017 mongodb/mongodb-community-server
+
+  ```
+  - connect to db 
+  ``` sh 
+  mongosh mongodb://localhost:27017
+  ```
+  - create a new DB 
+  ``` sh 
+  use coffee
+  ```
+  - create a collection name Drink
+  ``` sh
+  db.createCollection("Drink")
+  ```
+  - upload drinks.json file in  /drinksData/drinks.json
+
 ## Table of Contents
 
 - [Production Demo](#production-demo)
